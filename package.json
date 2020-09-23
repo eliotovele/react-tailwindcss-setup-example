@@ -2,19 +2,26 @@
   "name": "react-setup",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/index.css",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@tailwindui/react": "^0.1.1",
+    "axios": "^0.20.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.0",
+    "eslint-plugin-standard": "^4.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "react-scripts": "3.4.3",
+    "swr": "^0.3.4"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +37,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/ui": "^0.6.2",
+    "autoprefixer": "9.8.6",
+    "babel-plugin-root-import": "^6.5.0",
+    "customize-cra": "^1.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "postcss-cli": "^8.0.0",
+    "prettier": "^2.1.2",
+    "react-app-rewired": "^2.1.6",
+    "tailwindcss": "^1.8.10"
   }
 }
